@@ -1,0 +1,40 @@
+body{
+    background-color: aqua;
+    
+}
+.fetch{
+    color: white;
+    margin-top: 20px;
+    height: 70px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.covid{
+    color: blue;
+    margin-left: 28%;
+    margin-top: 30px;
+    width: 45%;
+    height: auto;
+    background-color: orangered;
+}
+.covid #cases{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.covid #info {
+    display: flex;
+}
+.covid #info #fill h3{
+    color: black;
+}
