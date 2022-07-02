@@ -37,31 +37,18 @@ function getapi(url){
 
 function displayData(apidata){
     console.log(apidata)
-    for (let i of apidata.Countries) {
-        let h1=document.createElement("h3")
-        let h2=document.createElement("h3")
-        let h3=document.createElement("h3")
-        let h4=document.createElement("h3")
-        let h5=document.createElement("h3")
-        let h6=document.createElement("h3")
+    let c=apidata.Countries[77].Country
+    let t=apidata.Countries[77].Date
+    let tc=apidata.Countries[77].TotalConfirmed
+    let td=apidata.Countries[77].TotalDeaths
+    let nc=apidata.Countries[77].NewConfirmed
+    let nd=apidata.Countries[77].NewDeaths
 
-            
-            h1.textContent=`${i[77].Country}`
-            h2.textContent=`${i[77].Date}`
-            h3.textContent=`${i[77].TotalConfirmed}`
-            h4.textContent=`${i[77].TotalDeaths}`
-            h5.textContent=`${i[77].NewConfirmed}`
-            h6.textContent=`${i[77].NewDeaths}`
+    let pre = document.createElement("pre");
+    console.log(tc);
+    pre.innerHTML = `<span>Country Name: </span> ${c}\n<span>Date: </span> ${t} \n<span>Total Cases: </span> ${tc} \n<span>Total Deaths: </span>${td} \n<span>New Cases: </span>${nc} \n<span>New Deaths: </span>${nd}`
 
-            
-           document.getElementById("fill").appendChild(h1)
-           document.getElementById("fill").appendChild(h2)
-           document.getElementById("fill").appendChild(h3)
-           document.getElementById("fill").appendChild(h4)
-           document.getElementById("fill").appendChild(h5)
-           document.getElementById("fill").appendChild(h6)
-
-    }
+    document.getElementById("info").appendChild(pre)
 }
 getapi(api_url)
 

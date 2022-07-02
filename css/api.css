@@ -26,15 +26,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-h3{
-    margin-left: 30px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: white;
-}
 .covid #info {
     display: flex;
 }
 .covid #info #fill h3{
     color: black;
+}
+pre{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
 }
